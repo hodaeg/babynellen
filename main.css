@@ -9,17 +9,18 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-background: rgb(0,62,13);
-background: linear-gradient(0deg, rgba(0,62,13,1) 0%, rgba(0,112,90,1) 74%);
+    background: rgb(0,33,7);
+    background: linear-gradient(0deg, rgba(0,33,7,1) 0%, rgba(0,24,5,1) 100%);
 }
 .angry-grid {
    display: grid; 
-
+    background-image: url(screenshots/stars.png);
+    background-size: 100%;
+    background-repeat:repeat-x;
    grid-template-rows: .5fr 1fr .5fr;
    grid-template-columns: .5fr 1fr .5fr;
    gap: 0px;
    height: 100%;
-   
 }
   
 H1 {
@@ -90,30 +91,37 @@ H1 {
    grid-column-start: 2;
    grid-row-end: 4;
    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-content: space-around;
+    padding-left: 40%;
+    grid-gap: 20px;
+    background-image: url(screenshots/grass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30
 }
 
 .BUTTON_VMV {
    -webkit-border-radius: 4em;
    -moz-border-radius: 4em;
-   border-radius: 20px;
+   border-radius: 1em;
    color: whitesmoke;
    font-family: Cabin;
     padding: .2em;
    font-size: 50px;
    font-weight: 80;
-   background-color: #00705a;
-   border: solid #008c71 1px;
+   background-color: #004A10;
+   border: solid rgba(255, 255, 255, 0.19) 1px;
    text-decoration: none;
    cursor: pointer;
    text-align: center;
 }
 
 .BUTTON_VMV:hover {
-   background: #00a787;
-   border: solid #00cca5 1px;
-   -webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
+   background: #009521;
+   border: solid whitesmoke 1px;
    text-decoration: none;
 }
 
@@ -121,4 +129,76 @@ p {
     font-family: 'Cabin', sans-serif;
     font-size: 1.5em;
     color: white;
+}
+
+.animals {
+    height: 6em;
+    opacity: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+    .angry-grid {
+   display: grid; 
+    background-image: url(screenshots/stars.png);
+    background-size: 100%;
+    background-repeat:repeat-x;
+   grid-template-rows: .5fr 1fr .5fr;
+   grid-template-columns: 1fr;
+   gap: 0px;
+   height: 100%;
+}
+    #item-1 {
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 2;
+   grid-column-end: 1;
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+    h1 {
+        font-size: 3em;
+    }
+#item-3 {
+   grid-row-start: 2;
+   grid-column-start: 1;
+    grid-row-end: 3;
+   grid-column-end: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+#item-4 {
+   grid-row-start: 3;
+   grid-column-start: 1;
+   grid-row-end: 4;
+   grid-column-end: 1;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-content: space-around;
+    padding-left: 40%;
+    grid-gap: 20px;
+    background-image: url(screenshots/grass.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30
+}
+    .BUTTON_VMV {
+   -webkit-border-radius: 4em;
+   -moz-border-radius: 4em;
+   border-radius: 1em;
+   color: whitesmoke;
+   font-family: Cabin;
+    padding: .2em;
+   font-size: 2em;
+   font-weight: 80;
+   background-color: #004A10;
+   border: solid rgba(255, 255, 255, 0.19) 1px;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
 }
