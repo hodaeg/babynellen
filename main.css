@@ -1,0 +1,124 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+background: rgb(0,62,13);
+background: linear-gradient(0deg, rgba(0,62,13,1) 0%, rgba(0,112,90,1) 74%);
+}
+.angry-grid {
+   display: grid; 
+
+   grid-template-rows: .5fr 1fr .5fr;
+   grid-template-columns: .5fr 1fr .5fr;
+   gap: 0px;
+   height: 100%;
+   
+}
+  
+H1 {
+    font-family: 'Kalam', cursive;
+    font-size: 6em;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+.h1alt {
+    font-family: 'Yatra One', cursive;
+    font-size: 6em;
+    color: white;
+}
+#item-0 {
+    background-image: url(screenshots/treesleft.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 4;
+   grid-column-end: 2;
+   
+}
+#item-1 {
+   grid-row-start: 1;
+   grid-column-start: 2;
+   grid-row-end: 2;
+   grid-column-end: 3;
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headerName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+#item-2 {
+    background-image: url(screenshots/treesright.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 4;
+   grid-column-end: 4;
+   
+}
+#item-3 {
+   grid-row-start: 2;
+   grid-column-start: 2;
+    grid-row-end: 3;
+   grid-column-end: 3;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+#item-4 {
+   grid-row-start: 3;
+   grid-column-start: 2;
+   grid-row-end: 4;
+   grid-column-end: 3;
+}
+
+.BUTTON_VMV {
+   -webkit-border-radius: 4em;
+   -moz-border-radius: 4em;
+   border-radius: 20px;
+   color: whitesmoke;
+   font-family: Cabin;
+    padding: .2em;
+   font-size: 50px;
+   font-weight: 80;
+   background-color: #00705a;
+   border: solid #008c71 1px;
+   text-decoration: none;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_VMV:hover {
+   background: #00a787;
+   border: solid #00cca5 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
