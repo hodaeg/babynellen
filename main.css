@@ -159,39 +159,32 @@ p {
     h1 {
         font-size: 3em;
     }
+    .h1alt {
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    color: white;
+}
 #item-3 {
    grid-row-start: 2;
    grid-column-start: 1;
     grid-row-end: 3;
    grid-column-end: 1;
-    display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10em;
-    padding-right: 10em;
+    justify-content: space-evenly;
+    padding-left: 3em;
+    padding-right: 3em
 }
 #item-4 {
    grid-row-start: 3;
    grid-column-start: 1;
    grid-row-end: 4;
-   grid-column-end: 1;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    align-content: space-around;
-    padding-left: 40%;
-    grid-gap: 20px;
-    background-image: url(screenshots/grass.png);
-    background-repeat: no-repeat;
+   grid-column-end: 1;;
+    padding-left: 35%;
     background-position: center;
-    background-size: 30
+    background-position: bottom;
+    background-size: 90%;
 }
     .BUTTON_VMV {
-   -webkit-border-radius: 4em;
-   -moz-border-radius: 4em;
-   border-radius: 1em;
-   color: whitesmoke;
-   font-family: Cabin;
     padding: .2em;
    font-size: 2em;
    font-weight: 80;
@@ -201,4 +194,5 @@ p {
    cursor: pointer;
    text-align: center;
 }
+    
 }
