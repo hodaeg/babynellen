@@ -12,6 +12,10 @@ body {
     background: rgb(0,33,7);
     background: linear-gradient(0deg, rgba(0,33,7,1) 0%, rgba(0,24,5,1) 100%);
 }
+
+a {
+    color: #66A865;
+}
 .angry-grid {
    display: grid; 
     background-image: url(screenshots/stars.png);
@@ -24,17 +28,13 @@ body {
 }
   
 H1 {
-    font-family: 'Kalam', cursive;
+    font-family: 'Playfair Display SC', serif;
     font-size: 6em;
-    color:white;
+    color: white;
     padding: 0;
     margin: 0;
 }
-.h1alt {
-    font-family: 'Yatra One', cursive;
-    font-size: 6em;
-    color: white;
-}
+
 #item-0 {
     background-image: url(screenshots/treesleft.png);
     background-size: contain;
@@ -85,6 +85,7 @@ H1 {
     justify-content: space-around;
     padding-left: 10em;
     padding-right: 10em;
+    text-align: center;
 }
 #item-4 {
    grid-row-start: 3;
@@ -127,7 +128,7 @@ H1 {
 
 p {
     font-family: 'Cabin', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: white;
 }
 
@@ -135,13 +136,19 @@ p {
     height: 6em;
     opacity: 80%;
 }
-
+@media only screen and (max-width: 1400px) {
+    #item-3 {
+    padding-left: unset;
+    padding-right: unset;
+    }
+    h1 {
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 800px) {
     .angry-grid {
-   display: grid; 
     background-image: url(screenshots/stars.png);
-    background-size: 100%;
-    background-repeat:repeat-x;
+    background-size: 300%;
    grid-template-rows: .5fr 1fr .5fr;
    grid-template-columns: 1fr;
    gap: 0px;
@@ -159,11 +166,6 @@ p {
     h1 {
         font-size: 3em;
     }
-    .h1alt {
-    font-family: 'Kalam', cursive;
-    font-size: 3em;
-    color: white;
-}
 #item-3 {
    grid-row-start: 2;
    grid-column-start: 1;
@@ -173,6 +175,18 @@ p {
     justify-content: space-evenly;
     padding-left: 3em;
     padding-right: 3em
+}
+    #item-0 {
+    background-image: url(screenshots/treesleft.png);
+    background-repeat: no-repeat;
+    background-position: -80px;
+    opacity: 60%;
+    z-index: -1;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3
+    grid-column-end: 1;
+   
 }
 #item-4 {
    grid-row-start: 3;
@@ -185,7 +199,10 @@ p {
     background-size: 90%;
 }
     .BUTTON_VMV {
-    padding: .2em;
+    padding-left: .2em;
+    padding-right: .2em;
+    padding-top: .8em;
+    padding-bottom: .8em;
    font-size: 2em;
    font-weight: 80;
    background-color: #004A10;
