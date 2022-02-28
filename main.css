@@ -23,7 +23,6 @@ a {
     background-repeat:repeat-x;
    grid-template-rows: .5fr 1fr .5fr;
    grid-template-columns: .5fr 1fr .5fr;
-   gap: 0px;
    height: 100%;
 }
   
@@ -118,7 +117,6 @@ H1 {
    text-decoration: none;
    cursor: pointer;
    text-align: center;
-    margin-top: .5em;
 }
 
 .BUTTON_VMV:hover {
@@ -201,6 +199,7 @@ p {
 }
     .BUTTON_VMV {
     padding-left: .2em;
+    border-radius: 2em;
     padding-right: .2em;
     padding-top: .8em;
     padding-bottom: .8em;
@@ -210,7 +209,7 @@ p {
    border: solid rgba(255, 255, 255, 0.19) 1px;
    text-decoration: none;
    cursor: pointer;
-   text-align: center;
+    margin-top: 1em;
 }
     
 }
